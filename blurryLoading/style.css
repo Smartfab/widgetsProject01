@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+* {
+	box-sizing: border-box;
+}
+
+.body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Ubuntu", sans-serif;
+	height: 100vh;
+	overflow-y: hidden;
+	margin: 0px;
+}
+.bg {
+	background-image: url("https://images.unsplash.com/photo-1465101162946-4377e57745c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=878&q=80");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	/* opacity: 0; */
+	filter: blur(30px);
+}
+.loading-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 25px;
+	color: #fff;
+	opacity: 0;
+}
+/* body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	color: #222;
+	font-family: "Ubuntu", sans-serif;
+	margin: 0;
+	overflow-x: hidden;
+}
+.bg {
+	background-image: url("https://images.unsplash.com/photo-1465101162946-4377e57745c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=878&q=80");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	top: -30px;
+	left: -30px;
+	width: calc(100vw + 60px);
+	height: calc(100vh + 60px);
+	z-index: -1;
+	filter: blur(30px);
+}
+
+.loading-text {
+	font-size: 50px;
+	color: #fff;
+} */
