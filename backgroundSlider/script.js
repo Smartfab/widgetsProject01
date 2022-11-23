@@ -108,4 +108,62 @@ console.log(cars);
 console.log(cars.splice(3, 2, "Honda", "Passat"));
 console.log(cars.splice(4, 1));
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.reverse();
 console.log(fruits);
+pointss = [40, 100, 1, 5, 25, 10];
+console.log(
+	pointss.sort(function (a, b) {
+		return b - a;
+	})
+);
+
+console.log(
+	pointss.sort(function () {
+		return 0.5 - Math.random();
+	})
+);
+
+for (let i = pointss.length - 1; i > 0; i--) {
+	let j = Math.floor(Math.random() * (i + 1));
+	let k = pointss[i];
+	pointss[i] = pointss[j];
+	pointss[j] = k;
+}
+
+console.log(pointss);
+pointss.sort(function (a, b) {
+	return b - a;
+});
+console.log(pointss);
+console.log(pointss[pointss.length - 1]);
+function myArrayMax(arr) {
+	return Math.max.apply(null, arr);
+}
+console.log(myArrayMax(pointss));
+
+const carss = [
+	{ type: "Volvo", year: 2016 },
+	{ type: "Saab", year: 2001 },
+	{ type: "BMW", year: 2010 },
+];
+
+carss.sort(function (a, b) {
+	return a.year - b.year;
+});
+
+console.log(carss[0].type + " " + carss[0].year);
+
+const numberss = [45, 4, 9, 16, 25];
+let txt = "";
+numberss.forEach(myFunction);
+console.log(txt);
+function myFunction(value, index, numberss) {
+	txt += value + "<br>";
+}
+/* const numberss = [45, 4, 9, 16, 25];
+let txt = "";
+numberss.forEach(myFunction);
+console.log(txt);
+function myFunction(value) {
+	txt += value + "<br>";
+} */
